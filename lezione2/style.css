@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap");
+
+/* Selettore universale */
+
+/* * {
+  border: 2px solid red;
+} */
+
+/* Selettore tag */
+
+body {
+  background-color: #dfd9be;
+  border: 2px solid blue;
+  color: aqua;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Selettore classe */
+
+.navbar {
+  color: #e86a33;
+}
+
+/* Selettore id */
+
+#general_title {
+  color: #d4adfc;
+  text-align: center;
+}
+
+/* ----------------------- */
+
+.navbar ul li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.navbar ul li:hover {
+  color: red;
+}
+
+.main_images {
+  border: 10px solid red;
+  border-radius: 12px;
+  /* border-top-left-radius: 24px; */
+  width: 50%;
+  max-width: 400px;
+  /* height: 200px; */
+}
+
+#image_3 {
+  border: 10px dotted rgb(51, 255, 0);
+}
