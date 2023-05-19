@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.box_shadow {
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+body {
+  background-image: url(sfondo.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+nav {
+  margin-top: 20px;
+  background-color: rgb(106, 209, 123);
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.hamburger {
+  width: 30px;
+  padding: 5px;
+}
+
+.logo {
+  margin-top: 7px;
+  width: 30px;
+}
+
+ul {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  margin: 0 60px;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.modulo {
+  text-align: center;
+  background-color: rgb(106, 209, 123);
+  border: 2px solid red;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 5px;
+}
+
+input {
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid red;
+}
+
+button {
+  border: 2px solid red;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.blocco_1 {
+  margin-top: -15px;
+}
+
+.h_1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.p_1 {
+  border-radius: 5px;
+  margin-top: -5px;
+  border: 2px solid red;
+  background-color: rgb(106, 209, 123);
+  padding: 15px;
+}
+
+.blocco_1 img {
+  border: 2px solid red;
+  border-radius: 5px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  width: 90%;
+  background-color: rgb(106, 209, 123);
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  nav {
+    width: 90%;
+  }
+
+  a {
+    margin: 0 10px;
+    color: black;
+  }
+  .blocco_1 {
+    width: 90%;
+  }
+  .blocco_1 img {
+    width: 99%;
+    height: 300px;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  nav {
+    width: 90%;
+  }
+
+  a {
+    margin: 0 30px;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 90%;
+  }
+
+  a {
+    margin: 0 50px;
+    color: black;
+  }
+
+  .modulo {
+    width: 250px;
+  }
+
+  .blocco_1 img {
+    width: 99%;
+    height: 195px;
+    margin-top: 0px;
+  }
+
+  .blocco_2 {
+    display: flex;
+    gap: 20px;
+    height: 200px;
+  }
+
+  .p_1 {
+    margin-top: 0;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 90%;
+  }
+
+  a {
+    margin: 0 90px;
+    color: black;
+  }
+}
