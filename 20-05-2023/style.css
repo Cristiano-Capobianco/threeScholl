@@ -1,0 +1,87 @@
+html {
+  background-color: grey;
+}
+
+body p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+}
+
+nav {
+  background-color: aqua;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+nav h1 {
+  color: black;
+  text-shadow: 3px 5px 2px #474747, 2px 2px 13px #ce5937;
+}
+
+.titolo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.titolo img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+ul span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+ul a {
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  gap: 1.5rem;
+  background-color: aqua;
+  padding-bottom: 1rem;
+}
+
+section {
+  margin: 0 1rem;
+}
+
+.section1 {
+  flex: 3;
+}
+
+.section2 {
+  flex: 1;
+}
+
+.section2 img {
+  width: 48%;
+  justify-content: center;
+}
+
+section h2 {
+  font-family: "Cinzel Decorative", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: aqua;
+  margin-top: 1rem;
+  padding: 1rem;
+}
