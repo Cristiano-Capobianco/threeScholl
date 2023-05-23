@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Helvetica neue", Arial, "sans serif";
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* inizio stile card */
+
+.card {
+  border: 2px solid black;
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  border-radius: 1.5em;
+  background-color: red;
+}
+
+/* inizio stile card header */
+
+.card header,
+.card footer {
+  height: 3em;
+  padding: 1em;
+}
+
+.card header h2 {
+  margin: 0;
+  font-size: 2em;
+  padding-top: 0.2em;
+}
+
+/* inizio stile card header */
+
+.card article {
+  background-color: firebrick;
+  height: 12em;
+}
+
+.card article img {
+  float: right;
+  max-height: 100%;
+}
+
+.card article p {
+  margin: 0;
+  padding: 1em;
+  line-height: 1.4em;
+  color: white;
+}
+
+.card footer p {
+  margin: 0;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+/* fine stile card */
