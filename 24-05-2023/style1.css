@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "aside nav nav nav"
+    "aside article article article"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  background-color: #393f4d;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul,
+.menu li {
+  display: flex;
+  font-size: 16px;
+}
+
+.sidebar {
+  background-color: #ff7755;
+  grid-area: aside;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+}
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav {
+  background-color: #ff7755;
+  grid-area: nav;
+}
+
+.nav ul li {
+  display: inline;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article {
+  grid-area: article;
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #393f4d;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;
+}
