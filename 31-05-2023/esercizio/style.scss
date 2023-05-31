@@ -1,0 +1,125 @@
+$background1: red;
+$background2: blue;
+$background3: yellow;
+$background4: green;
+
+$color1: green;
+$color2: violet;
+
+$mobile: 420px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin d-fllex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@mixin button($padding, $color, $margin) {
+  padding: $padding;
+  color: $color;
+  margin-top: $margin;
+  cursor: pointer;
+  &:hover {
+    transform: scale (1.08);
+    transform: rotate(360deg);
+    transition: 0.8s;
+    color: red;
+  }
+}
+
+@mixin button2($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+  cursor: pointer;
+}
+
+body {
+  @include desktop {
+    background-color: yellow;
+  }
+
+  nav {
+    background-color: $background1;
+
+    ul {
+      @include d-fllex(row, space-around, start);
+      padding: 2rem;
+    }
+  }
+  main {
+    @include desktop() {
+      border: solid 0.2rem black;
+    }
+
+    border: 0.5rem solid black;
+    section {
+      margin: 1rem;
+
+      .div1 {
+        @include d-fllex(row, center, start);
+        background-color: $background2;
+        color: $color1;
+      }
+      div {
+        @include desktop {
+          background-color: $background1;
+        }
+
+        @include d-fllex(column, center, start);
+        background-color: $background3;
+        color: $color2;
+      }
+    }
+    input {
+      @include desktop() {
+        padding: 0 3rem;
+      }
+      @include button(1rem, red, 1rem);
+    }
+
+    .input {
+      @include button2(3rem, 5rem);
+    }
+  }
+
+  footer {
+    @include desktop() {
+      font-size: 2rem;
+    }
+
+    background-color: $background4;
+
+    ul {
+      @include d-fllex(row, space-evenly, end);
+      padding: 2rem;
+
+      li {
+        color: $color2;
+      }
+    }
+  }
+}
