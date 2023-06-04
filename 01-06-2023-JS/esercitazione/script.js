@@ -43,10 +43,14 @@
 //   console.log(0);
 // }
 
-var numbery = prompt("dammi un numero");
+// var numbery = prompt("dammi un numero");
 
-if (numbery % 2 == 0) {
-  console.log("numero pari");
-} else {
-  console.log("numero dispari");
+// if (numbery % 2 == 0) {
+//   console.log("numero pari");
+// } else {
+//   console.log("numero dispari");
+// }
+
+for (var i = 0; i < 5; i++) {
+  console.log(i);
 }
