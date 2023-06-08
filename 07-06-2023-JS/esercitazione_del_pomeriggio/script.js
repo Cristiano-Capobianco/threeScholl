@@ -171,3 +171,18 @@
 
 // data una matrice 4 x 4 composta da tutti zeri
 // rendere la matrice triangolare superiore utilizzando la funzione math.random
+
+let matrice = [
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+];
+
+for (let i = 0; i < matrice.length; i++) {
+  for (let y = i; y < matrice[i].length; y++) {
+    matrice[i][y] = Math.floor(Math.random() * 100);
+  }
+}
+
+console.log(matrice);
