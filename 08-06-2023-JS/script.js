@@ -240,14 +240,16 @@
 
 // 9) Date due stringhe (Filo e Ponte) sostituire i primi due caratteri della prima stringa con i primi due caratteri della seconda stringa
 
-let stringa1 = "filo";
-let stringa2 = "Ponte";
+// let stringa1 = "filo";
+// let stringa2 = "Ponte";
 
-let stringa1Char = stringa1.slice(0, 2);
-let stringa11Char = stringa1.slice(2);
+// let stringa1Char = stringa1.slice(0, 2);
+// let stringa11Char = stringa1.slice(2);
 
-let stringa2Char = stringa2.slice(0, 2);
-let stringa22Char = stringa2.slice(2);
+// let stringa2Char = stringa2.slice(0, 2);
+// let stringa22Char = stringa2.slice(2);
 
-console.log(stringa1Char + stringa2Char);
-console.log(stringa11Char + stringa22Char);
+// console.log(stringa1Char + stringa2Char);
+// console.log(stringa11Char + stringa22Char);
+
+// ---------------------------------------------------------------------------------------------

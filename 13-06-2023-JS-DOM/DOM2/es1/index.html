@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Calcolatrice</title> 
+        <script src="script.js"></script> 
+    </head>
+
+    <body>
+
+        <table>
+            <tr>
+                <td colspan="3"> 
+                    <p id="number1" style="float:left"> </p>
+                    <p id="oper" style="float:left"> </p>
+                    <p id="number2" style="float:left"> </p>
+                    <p id="result" style="float:left"> </p>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="button" onclick="numberCliccked(1)" value="1" /></td>
+                <td> <input type="button" onclick="numberCliccked(2)" value="2" /></td>
+                <td> <input type="button" onclick="numberCliccked(3)" value="3" /></td> 
+            </tr>
+            <tr>
+                <td> <input type="button" onclick="numberCliccked(4)" value="4" /></td>
+                <td> <input type="button" onclick="numberCliccked(5)" value="5" /></td>
+                <td> <input type="button" onclick="numberCliccked(6)" value="6" /></td> 
+            </tr>
+            <tr>
+                <td> <input type="button" onclick="numberCliccked(7)" value="7"/></td>
+                <td> <input type="button" onclick="numberCliccked(8)" value="8"/></td>
+                <td> <input type="button" onclick="numberCliccked(9)" value="9"/></td> 
+            </tr>
+            <tr>
+                <td> <input type="button" onclick="numberCliccked(0)" value="0" /></td>
+                <td>
+                    <select onchange="operation()">
+                        <option value="">SCEGLI OPERAZIONE</option>
+                        <option value="+">SOMMA</option>
+                        <option value="-">SOTTRAZIONE</option>
+                        <option value="*">MOLTIPLICAZIONE</option>
+                        <option value="/">DIVISIONE</option>
+                    </select>
+                </td>
+                <td> <input type="button" onclick="calcolaRisultato()" value="=" /></td>
+            </tr>
+            
+
+        </table>
+
+    </body>
+
+</html>
